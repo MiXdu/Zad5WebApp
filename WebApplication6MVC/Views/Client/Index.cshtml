@@ -1,0 +1,117 @@
+﻿@model IEnumerable<WebApplication6Api.Database.Entities.Parcel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Addressee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostalCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegisteredDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShippedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveredDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Addressee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostalCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weight)
+            </td>
+            <td>
+                @if (item.ContactNumber != "") 
+                { 
+                    @Html.DisplayFor(modelItem => item.ContactNumber)
+                } 
+                else
+                {
+                    @Html.Raw("Not provided")
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegisteredDate)
+            </td>
+            <td>
+                @if (item.ShippedDate != DateTimeOffset.MinValue)
+                {
+                    @Html.DisplayFor(modelItem => item.ShippedDate)
+                }
+                else
+                {
+                    @Html.Raw("Not yet shipped")
+                }
+            </td>
+            <td>
+                @if (item.ShippedDate != DateTimeOffset.MinValue)
+                {
+                    @if (item.DeliveredDate != DateTimeOffset.MinValue)
+                    {
+                        @Html.DisplayFor(modelItem => item.DeliveredDate)
+                    }
+                    else
+                    {
+                        @Html.Raw("Not yet delivered")
+                    }
+                }
+                else
+                {
+                    @Html.Raw("-")
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

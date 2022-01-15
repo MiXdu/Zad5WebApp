@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication6Api", "WebApplication6Api\WebApplication6Api.csproj", "{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication6MVC", "WebApplication6MVC\WebApplication6MVC.csproj", "{99C1DF44-E266-4CC4-A423-A19504078052}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Solution|Any CPU = Debug Solution|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Debug Solution|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Debug Solution|Any CPU.Build.0 = Debug|Any CPU
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D9DFE6-8E18-42F4-AE20-E20B5BD2B1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Debug Solution|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Debug Solution|Any CPU.Build.0 = Debug|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C1DF44-E266-4CC4-A423-A19504078052}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38E966C0-514C-4138-B662-675C5C602D33}
+	EndGlobalSection
+EndGlobal
